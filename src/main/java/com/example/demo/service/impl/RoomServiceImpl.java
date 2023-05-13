@@ -29,7 +29,7 @@ import java.util.concurrent.ConcurrentHashMap;
 @RequiredArgsConstructor
 public class RoomServiceImpl implements RoomService {
 
-    private final Map<Long, List<ConnectedUserDto>> connections = new ConcurrentHashMap<>();
+    public final Map<Long, List<ConnectedUserDto>> connections = new ConcurrentHashMap<>();
     private final RoomRepository roomRepository;
     private final UserRepository userRepository;
     private final ModelMapper modelMapper;
